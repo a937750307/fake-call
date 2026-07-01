@@ -1,0 +1,255 @@
+/* ==========================================
+   themes.css - 四种来电主题样式（2024 现代版）
+   ========================================== */
+
+/* ==== 公共增强：来电页背景渐变 ==== */
+.incoming-page {
+  background: linear-gradient(180deg, #0a0a0f 0%, #1a1a2e 40%, #0d0d14 100%);
+}
+
+/* ==== iOS 18 风格 ==== */
+.theme-ios .incoming-page {
+  background: linear-gradient(180deg, #0d0d14 0%, #1a1a2e 35%, #101018 100%);
+}
+
+.theme-ios .incoming-avatar {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.5);
+}
+
+.theme-ios .incoming-name {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.theme-ios .incoming-subtitle {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.theme-ios .incoming-actions {
+  gap: 90px;
+  margin-top: 60px;
+}
+
+.theme-ios .btn-decline {
+  border-radius: 50%;
+  background: #2C2C2E;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.theme-ios .btn-accept {
+  border-radius: 50%;
+  background: #30D158;
+  box-shadow: 0 4px 20px rgba(48,209,88,0.5);
+}
+
+.theme-ios .btn-decline svg {
+  width: 30px;
+  height: 30px;
+}
+
+.theme-ios .btn-accept svg {
+  width: 30px;
+  height: 30px;
+}
+
+.theme-ios #wechat-bar { display: none !important; }
+.theme-ios #wechat-call-hint { display: none !important; }
+
+/* ==== 华为 HarmonyOS 4 风格 ==== */
+.theme-huawei .incoming-page {
+  background: linear-gradient(180deg, #000408 0%, #0a1628 45%, #050d18 100%);
+}
+
+.theme-huawei .incoming-avatar {
+  border-radius: 18px;
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 0 0 3px rgba(0,125,255,0.15), 0 12px 40px rgba(0,0,0,0.6);
+}
+
+.theme-huawei .incoming-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #F0F0F5;
+  letter-spacing: 2px;
+}
+
+.theme-huawei .incoming-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+}
+
+.theme-huawei .incoming-actions {
+  gap: 80px;
+  margin-top: 64px;
+}
+
+.theme-huawei .btn-decline {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #E8253B, #C41A2E);
+  box-shadow: 0 6px 20px rgba(232,37,59,0.45);
+}
+
+.theme-huawei .btn-accept {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1A8CFF, #0066CC);
+  box-shadow: 0 6px 20px rgba(26,140,255,0.45);
+}
+
+.theme-huawei .btn-decline svg,
+.theme-huawei .btn-accept svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* ==== 小米 HyperOS 风格 ==== */
+.theme-xiaomi .incoming-page {
+  background: linear-gradient(180deg, #08080c 0%, #1a1410 40%, #0e0c08 100%);
+}
+
+.theme-xiaomi .incoming-avatar {
+  border-radius: 50%;
+  width: 136px;
+  height: 136px;
+  box-shadow: 0 0 0 3px rgba(255,105,0,0.12), 0 10px 36px rgba(0,0,0,0.55);
+}
+
+.theme-xiaomi .incoming-name {
+  font-size: 32px;
+  font-weight: 600;
+  color: #FAFAFA;
+  letter-spacing: 1.5px;
+}
+
+.theme-xiaomi .incoming-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+}
+
+.theme-xiaomi .incoming-actions {
+  gap: 84px;
+  margin-top: 62px;
+}
+
+.theme-xiaomi .btn-decline {
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.theme-xiaomi .btn-accept {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF8C42, #FF6900);
+  box-shadow: 0 6px 20px rgba(255,105,0,0.45);
+}
+
+.theme-xiaomi .btn-decline svg,
+.theme-xiaomi .btn-accept svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* ==== 微信 8.0 风格 ==== */
+.theme-wechat .incoming-page {
+  background: #191919;
+}
+
+.theme-wechat #wechat-bar {
+  display: flex !important;
+  background: #191919;
+  border-bottom: 0.5px solid rgba(255,255,255,0.06);
+  padding: 16px 24px 12px;
+}
+
+.theme-wechat #wechat-call-hint {
+  display: block !important;
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 0;
+}
+
+.theme-wechat .incoming-avatar {
+  border-radius: 10px;
+  width: 112px;
+  height: 112px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.theme-wechat .incoming-content {
+  gap: 10px;
+  padding-top: 30px;
+}
+
+.theme-wechat .incoming-name {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.theme-wechat .incoming-subtitle {
+  display: none;
+}
+
+.theme-wechat .incoming-actions {
+  gap: 48px;
+  margin-top: 56px;
+}
+
+.theme-wechat .btn-decline {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  box-shadow: none;
+}
+
+.theme-wechat .btn-accept {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #07C160;
+  box-shadow: 0 4px 16px rgba(7,193,96,0.4);
+}
+
+.theme-wechat .btn-decline svg,
+.theme-wechat .btn-accept svg {
+  width: 26px;
+  height: 26px;
+}
+
+.theme-wechat .action-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ==== 系统默认（非特定主题时的通用样式）==== */
+#page-incoming:not(.theme-ios):not(.theme-huawei):not(.theme-xiaomi):not(.theme-wechat) .incoming-avatar {
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.06), 0 8px 30px rgba(0,0,0,0.5);
+}
+
+#page-incoming:not(.theme-ios):not(.theme-huawei):not(.theme-xiaomi):not(.theme-wechat) #wechat-bar {
+  display: none !important;
+}
+
+#page-incoming:not(.theme-ios):not(.theme-huawei):not(.theme-xiaomi):not(.theme-wechat) #wechat-call-hint {
+  display: none !important;
+}
+
+/* ==== 隐藏非微信主题的 bar ==== */
+.theme-ios #wechat-bar,
+.theme-huawei #wechat-bar,
+.theme-xiaomi #wechat-bar {
+  display: none !important;
+}
+
+.theme-ios #wechat-call-hint,
+.theme-huawei #wechat-call-hint,
+.theme-xiaomi #wechat-call-hint {
+  display: none !important;
+}
